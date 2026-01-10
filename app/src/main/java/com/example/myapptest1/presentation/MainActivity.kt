@@ -34,6 +34,9 @@ class MainActivity : ComponentActivity() {
         setContent {
 //            val viewModel = hiltViewModel<DogFactViewModel>()
             val uiState by viewModel.uiState.collectAsState()
+//            val uiState by viewModel.uiState.observeAsState(
+//                DogFactUiState.Loading
+//            )
 
             when (val state = uiState) {
                 is DogFactUiState.Success -> {
