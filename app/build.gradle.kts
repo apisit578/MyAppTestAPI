@@ -63,6 +63,8 @@ dependencies {
     implementation(libs.retrofit.v310snapshot)
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
+    // image url
+    implementation("io.coil-kt:coil-compose:2.5.0")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
